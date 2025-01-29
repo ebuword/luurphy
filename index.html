@@ -10,73 +10,102 @@
 </head>
 <body class="bg-black text-white">
     <div class="flex h-screen">
-        <!-- Sol Menü -->
+        <!-- Sol Menü - Geliştirilmiş -->
         <nav class="w-[328px] bg-[#121212] p-6 flex flex-col shrink-0 lg:block hidden">
-            <div class="space-y-4">
-                <!-- Logo ve Başlık -->
+            <!-- Üst Kısım -->
+            <div class="flex flex-col space-y-6">
+                <!-- Logo Alanı -->
                 <div class="flex items-center justify-between">
                     <div class="text-2xl font-bold flex items-center">
                         <i class="fas fa-music text-blue-500 mr-2"></i>
-                        Luurphy
+                        <span class="animated-gradient-text">Luurphy</span>
                     </div>
+                    <button class="text-gray-400 hover:text-white tooltip" data-tooltip="Bildirimler">
+                        <i class="fas fa-bell"></i>
+                    </button>
                 </div>
 
-                <!-- Yeni: Oturum Açma Bölümü -->
-                <div class="bg-[#282828] p-4 rounded-lg space-y-3">
+                <!-- Oturum/Premium -->
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-lg space-y-3 hover-card-effect">
+                    <div class="text-sm mb-2">Müziğin keyfini sınırsız çıkar!</div>
                     <button class="w-full bg-white text-black rounded-full py-3 font-bold hover:scale-105 transition flex items-center justify-center">
                         <i class="fas fa-user-circle mr-2"></i>
                         Oturum Aç
                     </button>
-                    <button class="w-full text-white hover:text-blue-500 py-2 font-bold transition flex items-center justify-center">
+                    <button class="w-full bg-black/30 backdrop-blur-sm text-white py-2 rounded-full font-bold transition hover:bg-black/40 flex items-center justify-center">
                         <i class="fas fa-crown text-gradient-purple-pink mr-2"></i>
                         Premium'a Yükselt
                     </button>
                 </div>
-                
-                <ul class="space-y-3">
-                    <li class="hover:text-blue-500 cursor-pointer flex items-center p-2 rounded-md hover:bg-[#282828]">
-                        <i class="fas fa-home mr-3"></i>Ana Sayfa
-                    </li>
-                    <li class="hover:text-blue-500 cursor-pointer flex items-center p-2 rounded-md hover:bg-[#282828]">
-                        <i class="fas fa-search mr-3"></i>Ara
-                    </li>
-                    <li class="hover:text-blue-500 cursor-pointer flex items-center p-2 rounded-md hover:bg-[#282828]">
-                        <i class="fas fa-book mr-3"></i>Kitaplığın
-                    </li>
-                </ul>
 
-                <div class="mt-8 bg-[#282828] p-4 rounded-lg">
-                    <div class="font-bold mb-4 flex items-center">
-                        <i class="fas fa-plus text-gray-400 mr-2"></i>
-                        Çalma Listesi Oluştur
-                    </div>
-                    <div class="font-bold mb-4 flex items-center">
-                        <i class="fas fa-heart text-gradient-purple-pink mr-2"></i>
-                        Beğenilen Şarkılar
-                    </div>
-                </div>
-
-                <div class="border-t border-gray-800 pt-4 mt-4">
-                    <div class="font-bold mb-4">ÇALMA LİSTELERİN</div>
-                    <ul class="space-y-3 text-gray-400 max-h-48 overflow-y-auto">
-                        <li class="hover:text-white cursor-pointer flex items-center">
-                            <img src="https://picsum.photos/32" class="w-8 h-8 rounded mr-3" alt="Playlist">
-                            Pop Mix
+                <!-- Ana Menü -->
+                <div class="bg-[#282828]/50 backdrop-blur-sm rounded-lg p-2">
+                    <ul class="space-y-1">
+                        <li class="hover:text-blue-500 cursor-pointer flex items-center p-3 rounded-md hover:bg-[#282828] group">
+                            <i class="fas fa-home mr-3 group-hover:scale-110 transition"></i>
+                            <span class="group-hover:font-bold transition-all">Ana Sayfa</span>
                         </li>
-                        <li class="hover:text-white cursor-pointer flex items-center">
-                            <img src="https://picsum.photos/33" class="w-8 h-8 rounded mr-3" alt="Playlist">
-                            Rock Klasikleri
+                        <li class="hover:text-blue-500 cursor-pointer flex items-center p-3 rounded-md hover:bg-[#282828] group">
+                            <i class="fas fa-search mr-3 group-hover:scale-110 transition"></i>
+                            <span class="group-hover:font-bold transition-all">Ara</span>
                         </li>
-                        <!-- Diğer çalma listeleri... -->
+                        <li class="hover:text-blue-500 cursor-pointer flex items-center p-3 rounded-md hover:bg-[#282828] group">
+                            <i class="fas fa-book mr-3 group-hover:scale-110 transition"></i>
+                            <span class="group-hover:font-bold transition-all">Kitaplığın</span>
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Yükleme Butonu -->
+            <!-- Çalma Listeleri Bölümü -->
+            <div class="mt-6 flex-1 overflow-hidden">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="font-bold flex items-center">
+                        <i class="fas fa-list text-gray-400 mr-2"></i>
+                        Çalma Listelerin
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="text-gray-400 hover:text-white p-2 rounded-full hover:bg-[#282828] tooltip" data-tooltip="Yeni liste">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <button class="text-gray-400 hover:text-white p-2 rounded-full hover:bg-[#282828] tooltip" data-tooltip="Sırala">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Playlist Arama -->
+                <div class="relative mb-4">
+                    <input type="text" 
+                           placeholder="Çalma listelerinde ara..." 
+                           class="w-full bg-[#282828] text-sm px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <i class="fas fa-search absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                </div>
+
+                <!-- Playlist Listesi -->
+                <div class="space-y-1 max-h-[calc(100vh-450px)] overflow-y-auto custom-scrollbar pr-2">
+                    <!-- Her bir playlist için hover efektli kart -->
+                    <div class="group hover:bg-[#282828] p-2 rounded-lg transition-all cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://picsum.photos/32" class="w-12 h-12 rounded-lg shadow-lg group-hover:shadow-xl transition-all" alt="Playlist">
+                            <div class="flex-1">
+                                <div class="font-medium group-hover:text-blue-500 transition-colors">Pop Mix</div>
+                                <div class="text-xs text-gray-400">15 şarkı • 45 dk</div>
+                            </div>
+                            <button class="opacity-0 group-hover:opacity-100 text-blue-500 hover:scale-110 transition-all">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Diğer playlistler... -->
+                </div>
+            </div>
+
+            <!-- Alt Kısım -->
             <div class="mt-auto pt-4 border-t border-gray-800">
-                <button class="flex items-center text-gray-400 hover:text-white">
-                    <i class="fas fa-download mr-2"></i>
-                    Uygulamayı Yükle
+                <button class="w-full bg-[#282828] hover:bg-[#3e3e3e] text-white py-3 rounded-full transition flex items-center justify-center space-x-2">
+                    <i class="fas fa-download"></i>
+                    <span>Uygulamayı İndir</span>
                 </button>
             </div>
         </nav>
@@ -103,38 +132,73 @@
             </div>
         </div>
 
-        <!-- Ana İçerik -->
+        <!-- Ana İçerik Geliştirmeleri -->
         <main class="flex-1 bg-gradient-to-b from-[#1e3264] to-[#121212] overflow-y-auto relative">
-            <!-- Üst Bar -->
+            <!-- Üst Bar Geliştirmeleri -->
             <div class="sticky top-0 z-30 bg-[#1e3264]/95 backdrop-blur-sm">
                 <div class="flex justify-between items-center p-4 lg:p-8">
-                    <!-- Mobil Logo - Sadece mobilde görünür -->
-                    <div class="flex lg:hidden items-center">
-                        <i class="fas fa-music text-blue-500 mr-2"></i>
-                        <span class="font-bold">Luurphy</span>
-                    </div>
-                    
-                    <!-- PC Gezinme Butonları - Sadece PC'de görünür -->
-                    <div class="hidden lg:flex space-x-4">
-                        <button class="bg-black/40 rounded-full p-2 hover:bg-black/60">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="bg-black/40 rounded-full p-2 hover:bg-black/60">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
+                    <!-- Sol Kısım -->
+                    <div class="flex items-center space-x-4">
+                        <!-- Gezinme Butonları -->
+                        <div class="hidden lg:flex space-x-2">
+                            <button class="bg-black/40 rounded-full p-2 hover:bg-black/60 group">
+                                <i class="fas fa-chevron-left group-hover:scale-110 transition"></i>
+                            </button>
+                            <button class="bg-black/40 rounded-full p-2 hover:bg-black/60 group">
+                                <i class="fas fa-chevron-right group-hover:scale-110 transition"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Mobil Logo -->
+                        <div class="flex lg:hidden items-center">
+                            <i class="fas fa-music text-blue-500 mr-2"></i>
+                            <span class="font-bold animated-gradient-text">Luurphy</span>
+                        </div>
                     </div>
 
-                    <!-- Mobil Menü Butonu -->
-                    <button class="lg:hidden text-2xl">
-                        <i class="fas fa-ellipsis-v"></i>
-                    </button>
+                    <!-- Sağ Kısım -->
+                    <div class="flex items-center space-x-4">
+                        <button class="hidden lg:flex items-center space-x-2 bg-[#282828] hover:bg-[#3e3e3e] px-4 py-2 rounded-full transition">
+                            <i class="fas fa-bell"></i>
+                            <span class="text-sm">Bildirimler</span>
+                        </button>
+                        <button class="hidden lg:flex items-center space-x-2 bg-[#282828] hover:bg-[#3e3e3e] px-4 py-2 rounded-full transition">
+                            <img src="https://picsum.photos/32" class="w-6 h-6 rounded-full" alt="Profile">
+                            <span class="text-sm">Ebubekir</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <button class="lg:hidden text-2xl">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <!-- Ana İçerik -->
+            <!-- İçerik Geliştirmeleri -->
             <div class="p-4 lg:p-8 pb-32">
-                <!-- Karşılama Metni -->
-                <h1 class="text-2xl lg:text-3xl font-bold mb-6">İyi Akşamlar, <span class="text-blue-500">Ebubekir</span></h1>
+                <!-- Karşılama Bölümü -->
+                <div class="mb-8">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <h1 class="text-2xl lg:text-3xl font-bold">İyi Akşamlar, <span class="text-blue-500">Ebubekir</span></h1>
+                        <div class="hidden lg:flex items-center space-x-2 text-sm text-gray-400">
+                            <i class="fas fa-clock"></i>
+                            <span>Son güncelleme: 5 dk önce</span>
+                        </div>
+                    </div>
+                    <!-- Hızlı Filtreler -->
+                    <div class="flex space-x-2 overflow-x-auto pb-2 custom-scrollbar-x">
+                        <button class="bg-[#282828] text-sm px-4 py-2 rounded-full hover:bg-[#3e3e3e] transition whitespace-nowrap">
+                            Tümü
+                        </button>
+                        <button class="bg-[#282828] text-sm px-4 py-2 rounded-full hover:bg-[#3e3e3e] transition whitespace-nowrap">
+                            Müzik
+                        </button>
+                        <button class="bg-[#282828] text-sm px-4 py-2 rounded-full hover:bg-[#3e3e3e] transition whitespace-nowrap">
+                            Podcast'ler
+                        </button>
+                        <!-- Diğer filtreler... -->
+                    </div>
+                </div>
 
                 <!-- Öne Çıkan Listeler -->
                 <section class="mb-8">
@@ -145,7 +209,7 @@
                                 <img src="https://picsum.photos/80" class="w-20 h-20 rounded" alt="Playlist">
                                 <span class="font-bold ml-4">Beğenilen Şarkılar</span>
                                 <button class="absolute right-4 opacity-0 group-hover:opacity-100 transition">
-                                    <i class="fas fa-play text-3xl text-blue-500 bg-black rounded-full p-3 hover:scale-105"></i>
+                                    <i class="fas fa-play px-3 text-3xl text-blue-500 bg-black rounded-full p-3 hover:scale-105"></i>
                                 </button>
                             </div>
                         </div>
@@ -165,7 +229,7 @@
                             <div class="relative">
                                 <img src="https://picsum.photos/200" class="w-full aspect-square rounded-lg mb-4" alt="Album">
                                 <button class="absolute bottom-2 right-2 opacity-0 group-hover:opacity-100 transition transform translate-y-2 group-hover:translate-y-0">
-                                    <i class="fas fa-play text-2xl text-black bg-blue-500 rounded-full p-3 hover:scale-105"></i>
+                                    <i class="fas fa-play px-3 text-2xl text-black bg-blue-500 rounded-full p-3 hover:scale-105"></i>
                                 </button>
                             </div>
                             <h3 class="font-bold truncate">Günlük Mix 1</h3>
@@ -214,7 +278,7 @@
                                         </div>
                                     </div>
                                     <button class="opacity-0 group-hover:opacity-100 transition">
-                                        <i class="fas fa-play text-xs text-black bg-blue-500 rounded-full p-1.5 hover:scale-105"></i>
+                                        <i class="fas fa-play px-3 text-xs text-black bg-blue-500 rounded-full p-1.5 hover:scale-105"></i>
                                     </button>
                                 </div>
                             </div>
@@ -265,7 +329,7 @@
                                         </div>
                                     </div>
                                     <button class="opacity-0 group-hover:opacity-100 transition">
-                                        <i class="fas fa-play text-xs text-black bg-blue-500 rounded-full p-1.5 hover:scale-105"></i>
+                                        <i class="fas fa-play px-3 text-xs text-black bg-blue-500 rounded-full p-1.5 hover:scale-105"></i>
                                     </button>
                                 </div>
                             </div>
@@ -316,7 +380,7 @@
                                         </div>
                                     </div>
                                     <button class="opacity-0 group-hover:opacity-100 transition">
-                                        <i class="fas fa-play text-xs text-black bg-blue-500 rounded-full p-1.5 hover:scale-105"></i>
+                                        <i class="fas fa-play px-3 px-3 px-3 text-xs text-black bg-blue-500 rounded-full p-1.5 hover:scale-105"></i>
                                     </button>
                                 </div>
                             </div>
@@ -367,7 +431,7 @@
                                         </div>
                                     </div>
                                     <button class="opacity-0 group-hover:opacity-100 transition">
-                                        <i class="fas fa-play text-xs text-black bg-blue-500 rounded-full p-1.5 hover:scale-105"></i>
+                                        <i class="fas fa-play px-3 text-xs text-black bg-blue-500 rounded-full p-1.5 hover:scale-105"></i>
                                     </button>
                                 </div>
                             </div>
@@ -398,7 +462,7 @@
                                 <img src="https://picsum.photos/203" class="w-full aspect-square rounded-lg mb-4" alt="Podcast">
                                 <div class="absolute bottom-0 right-0 m-2 opacity-0 group-hover:opacity-100 transition">
                                     <button class="bg-blue-500 rounded-full p-3 hover:scale-105 shadow-lg">
-                                        <i class="fas fa-play text-black"></i>
+                                        <i class="fas fa-play px-3 text-black"></i>
                                     </button>
                                 </div>
                             </div>
@@ -484,7 +548,7 @@
                                     <p class="text-gray-200">Bu haftanın en yeni şarkıları</p>
                                 </div>
                                 <button class="bg-black/30 rounded-full p-3 hover:bg-black/50 transition">
-                                    <i class="fas fa-play text-xl"></i>
+                                    <i class="fas fa-play px-3 text-xl"></i>
                                 </button>
                             </div>
                             <div class="mt-6 flex -space-x-4">
