@@ -94,13 +94,12 @@ Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS,
 ## Ekran Görüntüleri
 
 ### Ana Sayfa
-![Ana Sayfa](screenshots/home.png)
+![alt text](image.png)
 - Sol menü ve çalma listeleri
 - Önerilen içerikler
 - Müzik çalar
 
 ### Arama Sayfası
-![Arama Sayfası](screenshots/search.png)
 - Arama çubuğu
 - Kategoriler
 - Trend içerikler
