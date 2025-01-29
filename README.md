@@ -83,6 +83,18 @@ Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS,
 - Custom transitions
 - Keyframe animasyonları
 
+### Şarkı Sayfası (song.html) - Yeni Eklenenler
+- Detaylı şarkı bilgileri ve istatistikler
+- Tam şarkı sözleri ve zaman çizelgesi
+- Şarkı analizi ve popüler alıntılar
+- Topluluk yorumları ve etkileşimleri
+- Konser fotoğrafları galerisi (Swiper.js ile)
+- Lightbox görüntü görüntüleyici (Fancybox ile)
+- Radyo istasyonları ve podcast önerileri
+- Benzer şarkılar önerisi
+- Kullanıcı notları sistemi
+- Dinlenme istatistikleri ve grafikler
+
 ## Kullanılan Teknolojiler
 - HTML5
 - CSS3
@@ -95,6 +107,11 @@ Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS,
 - Tailwind CSS
 - Font Awesome
 
+### Yeni Eklenen Teknolojiler
+- Swiper.js (Slider/Carousel)
+- Fancybox (Lightbox)
+- jQuery
+
 ## Ekran Görüntüleri
 
 ### Ana Sayfa
@@ -103,12 +120,31 @@ Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS,
 - Önerilen içerikler
 - Müzik çalar
 
+### Şarkı Sayfası
+![Şarkı Sayfası](screenshots/song.png)
+- Detaylı şarkı bilgileri ve istatistikler
+- Tam şarkı sözleri ve zaman çizelgesi
+- Şarkı analizi ve popüler alıntılar
+- Topluluk yorumları ve etkileşimleri
+- Konser fotoğrafları galerisi (Swiper.js ile)
+- Lightbox görüntü görüntüleyici (Fancybox ile)
+- Radyo istasyonları ve podcast önerileri
+- Benzer şarkılar önerisi
+- Kullanıcı notları sistemi
+- Dinlenme istatistikleri ve grafikler
+
 ### Sanatçı Profili
 ![Sanatçı Profili](screenshots/artist.png)
 - Hero bölümü
 - İstatistikler
 - Şarkı listesi
 - Albümler
+
+### Keşif Sayfası
+![Keşif Sayfası](screenshots/discover.png)
+- Önerilen içerikler ve karışımlar
+- Yakında çalınanlar bölümü
+- Müzik çalar
 
 ## Planlanan Geliştirmeler
 - Şarkı sözleri görünümü
