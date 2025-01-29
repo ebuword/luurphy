@@ -105,16 +105,16 @@
 
         <!-- Ana İçerik -->
         <main class="flex-1 bg-gradient-to-b from-[#1e3264] to-[#121212] overflow-y-auto relative">
-            <!-- Üst Bar - Yeniden Düzenlendi -->
+            <!-- Üst Bar -->
             <div class="sticky top-0 z-30 bg-[#1e3264]/95 backdrop-blur-sm">
                 <div class="flex justify-between items-center p-4 lg:p-8">
-                    <!-- Mobil Logo -->
-                    <div class="lg:hidden flex items-center">
+                    <!-- Mobil Logo - Sadece mobilde görünür -->
+                    <div class="flex lg:hidden items-center">
                         <i class="fas fa-music text-blue-500 mr-2"></i>
                         <span class="font-bold">Luurphy</span>
                     </div>
                     
-                    <!-- Gezinme Butonları -->
+                    <!-- PC Gezinme Butonları - Sadece PC'de görünür -->
                     <div class="hidden lg:flex space-x-4">
                         <button class="bg-black/40 rounded-full p-2 hover:bg-black/60">
                             <i class="fas fa-chevron-left"></i>
@@ -131,11 +131,15 @@
                 </div>
             </div>
 
+            <!-- Ana İçerik -->
             <div class="p-4 lg:p-8 pb-32">
-                <!-- İçerik Grid'leri Responsive Yapıldı -->
+                <!-- Karşılama Metni -->
+                <h1 class="text-2xl lg:text-3xl font-bold mb-6">İyi Akşamlar, <span class="text-blue-500">Ebubekir</span></h1>
+
+                <!-- Öne Çıkan Listeler -->
                 <section class="mb-8">
-                    <h1 class="text-2xl lg:text-3xl font-bold mb-6">İyi Akşamlar, <span class="text-blue-500">Ebubekir</span></h1>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- Her bir kart responsive olacak -->
                         <div class="bg-[#282828] rounded-lg hover:bg-[#3e3e3e] transition group cursor-pointer relative">
                             <div class="flex items-center p-4">
                                 <img src="https://picsum.photos/80" class="w-20 h-20 rounded" alt="Playlist">
@@ -155,8 +159,9 @@
                         <h2 class="text-xl lg:text-2xl font-bold">Yakında Çalınanlar</h2>
                         <button class="text-gray-400 hover:text-white text-sm font-bold">TÜMÜNÜ GÖSTER</button>
                     </div>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                        <div class="bg-[#181818] p-4 rounded-lg hover:bg-[#282828] transition group relative">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+                        <!-- Her bir kart responsive olacak -->
+                        <div class="bg-[#181818] p-4 rounded-lg hover:bg-[#282828] transition group">
                             <div class="relative">
                                 <img src="https://picsum.photos/200" class="w-full aspect-square rounded-lg mb-4" alt="Album">
                                 <button class="absolute bottom-2 right-2 opacity-0 group-hover:opacity-100 transition transform translate-y-2 group-hover:translate-y-0">
@@ -172,9 +177,9 @@
 
                 <!-- Önerilen Sanatçılar -->
                 <section class="mb-8">
-                    <h2 class="text-2xl font-bold mb-6">Önerilen Sanatçılar</h2>
-                    <div class="grid grid-cols-6 gap-6">
-                        <!-- Tepki -->
+                    <h2 class="text-xl lg:text-2xl font-bold mb-6">Önerilen Sanatçılar</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 lg:gap-6">
+                        <!-- Her bir sanatçı kartı responsive olacak -->
                         <div class="bg-[#181818] p-4 rounded-lg hover:bg-[#282828] transition group">
                             <div class="relative">
                                 <img src="https://i.scdn.co/image/ab6761610000f178c74ec0db26dfaa7b1655f5b9" class="w-full aspect-square rounded-full mb-4" alt="Artist">
@@ -386,8 +391,9 @@
                         <h2 class="text-xl lg:text-2xl font-bold">Podcast'ler</h2>
                         <button class="text-gray-400 hover:text-white text-sm font-bold">TÜMÜNÜ GÖSTER</button>
                     </div>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                        <div class="bg-[#181818] p-4 rounded-lg hover:bg-[#282828] transition group relative">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                        <!-- Her bir podcast kartı responsive olacak -->
+                        <div class="bg-[#181818] p-4 rounded-lg hover:bg-[#282828] transition group">
                             <div class="relative">
                                 <img src="https://picsum.photos/203" class="w-full aspect-square rounded-lg mb-4" alt="Podcast">
                                 <div class="absolute bottom-0 right-0 m-2 opacity-0 group-hover:opacity-100 transition">
@@ -407,12 +413,13 @@
                 <!-- Ruh Haline Göre -->
                 <section class="mb-8">
                     <h2 class="text-xl lg:text-2xl font-bold mb-6">Ruh Haline Göre</h2>
-                    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
-                        <div class="bg-gradient-to-br from-pink-500 to-purple-500 p-4 rounded-lg hover:scale-105 transition cursor-pointer aspect-square flex flex-col justify-between">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                        <!-- Her bir mood kartı responsive olacak -->
+                        <div class="bg-gradient-to-br from-pink-500 to-purple-500 p-4 rounded-lg hover:scale-105 transition cursor-pointer aspect-square">
                             <h3 class="font-bold text-xl">Enerjik</h3>
                             <i class="fas fa-bolt text-3xl"></i>
                         </div>
-                        <div class="bg-gradient-to-br from-blue-500 to-cyan-500 p-4 rounded-lg hover:scale-105 transition cursor-pointer aspect-square flex flex-col justify-between">
+                        <div class="bg-gradient-to-br from-blue-500 to-cyan-500 p-4 rounded-lg hover:scale-105 transition cursor-pointer aspect-square">
                             <h3 class="font-bold text-xl">Sakin</h3>
                             <i class="fas fa-moon text-3xl"></i>
                         </div>
@@ -629,7 +636,7 @@
     </section>
 
     <!-- Geliştirilmiş Çalar -->
-    <footer class="fixed bottom-0 w-full bg-[#181818]/95 backdrop-blur-md border-t border-[#282828] p-2 lg:p-4 z-40 lg:block hidden">
+    <footer class="fixed bottom-0 w-full bg-[#181818]/95 backdrop-blur-md border-t border-[#282828] p-2 lg:p-4 z-40 hidden lg:block">
         <div class="flex flex-col lg:flex-row justify-between items-center">
             <!-- Sol Kısım -->
             <div class="flex items-center space-x-4">
@@ -716,6 +723,27 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobil Mini Çalar - Sadece mobilde görünür -->
+    <div class="lg:hidden fixed bottom-16 left-4 right-4 bg-[#282828] rounded-lg p-3 mb-2 z-40">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center flex-1">
+                <img src="https://picsum.photos/56" class="w-12 h-12 rounded" alt="Now playing">
+                <div class="ml-3 truncate">
+                    <div class="font-bold text-sm truncate">Şarkı Adı Çok Uzun Olabilir</div>
+                    <div class="text-xs text-gray-400 truncate">Sanatçı Adı</div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button class="text-white">
+                    <i class="fas fa-heart"></i>
+                </button>
+                <button class="bg-white text-black rounded-full w-8 h-8 flex items-center justify-center">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
