@@ -736,4 +736,435 @@
 @keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}
+
+/* Keşfet sayfası için yeni stiller */
+.mood-card {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.mood-card:hover {
+    transform: translateY(-5px) rotateX(10deg);
+}
+
+.trend-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.trend-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.trend-card:hover::after {
+    transform: translateX(100%);
+}
+
+/* Discover sayfası için yeni animasyonlar */
+.wave-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+    animation: wave 8s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0) rotate(0);
+        border-radius: 0;
+    }
+    50% {
+        transform: translateY(-20px) rotate(2deg);
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+}
+
+/* Keşfet kartları için hover efekti */
+.discover-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.discover-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.discover-card:hover::before {
+    opacity: 1;
+}
+
+/* Şarkı sözleri için yeni stiller */
+.lyrics-container {
+    position: relative;
+    line-height: 1.8;
+}
+
+.lyrics-verse {
+    position: relative;
+    padding-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.lyrics-verse::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.lyrics-verse:hover::before {
+    background: #3b82f6;
+}
+
+.lyrics-verse p {
+    transition: all 0.3s ease;
+}
+
+.lyrics-verse:hover p {
+    transform: translateX(10px);
+    color: white;
+}
+
+/* Altyazı modu için animasyon */
+@keyframes highlight {
+    0% {
+        background-color: transparent;
+        color: #9ca3af;
+    }
+    100% {
+        background-color: rgba(59, 130, 246, 0.1);
+        color: white;
+    }
+}
+
+.lyrics-highlight {
+    animation: highlight 0.5s ease forwards;
+}
+
+/* Zaman çizelgesi için stil */
+.lyrics-timeline {
+    position: relative;
+}
+
+.lyrics-timeline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #3b82f6;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Albüm kapağı için 3D efekt */
+.album-cover-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.album-cover-3d:hover img {
+    transform: rotateY(10deg) scale(1.05);
+}
+
+/* Şarkı detayları için animasyonlar */
+.song-details {
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aktif zaman göstergesi animasyonu */
+.time-indicator {
+    transition: top 0.3s ease;
+}
+
+/* Şarkı sözü vurgulama animasyonu */
+.lyrics-verse.active {
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.1), transparent);
+    transform: scale(1.02);
+}
+
+/* Şarkı versiyonları için hover efekti */
+.version-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.version-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.version-card:hover::after {
+    transform: translateX(100%);
+}
+
+/* Video kartları için hover efekti */
+.video-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-card:hover::after {
+    opacity: 1;
+}
+
+/* Etiketler için hover efekti */
+.tag-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.tag-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.tag-hover:hover::before {
+    transform: translateX(100%);
+}
+
+/* Galeri kartları için özel efektler */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover::after {
+    opacity: 1;
+}
+
+/* Galeri görsel hover efekti */
+.gallery-image {
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+/* Galeri kontrol noktaları animasyonu */
+.gallery-dot {
+    transition: all 0.3s ease;
+}
+
+.gallery-dot.active {
+    transform: scale(1.2);
+    background-color: #3b82f6;
+}
+
+/* Swiper özelleştirmeleri */
+.gallerySwiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.gallerySwiper .swiper-slide {
+    width: 300px;
+    height: 200px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #3b82f6 !important;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px !important;
+}
+
+.swiper-pagination-bullet {
+    background: #3b82f6 !important;
+}
+
+/* Fancybox özelleştirmeleri */
+.fancybox__backdrop {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.fancybox__container {
+    --fancybox-bg: rgba(0, 0, 0, 0.95);
+    --fancybox-accent-color: #3b82f6;
+}
+
+/* Swiper progress bar */
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+.autoplay-progress-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.autoplay-progress-bar::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 0deg,
+        #3b82f6 calc(var(--progress) * 360deg),
+        rgba(59, 130, 246, 0.3) 0deg
+    );
+    mask: radial-gradient(farthest-side, transparent 65%, #000 66%);
+    -webkit-mask: radial-gradient(farthest-side, transparent 65%, #000 66%);
+}
+
+/* Swiper slide hover efekti */
+.swiper-slide {
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+/* Fancybox animasyonları */
+.fancybox-zoomIn {
+    animation: fancyboxZoomIn .3s ease-out;
+}
+
+.fancybox-zoomOut {
+    animation: fancyboxZoomOut .3s ease-out;
+}
+
+@keyframes fancyboxZoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fancyboxZoomOut {
+    to {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}
+
+/* Fancybox toolbar özelleştirmesi */
+.fancybox__toolbar {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+.fancybox__toolbar button {
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.fancybox__toolbar button:hover {
+    color: var(--fancybox-accent-color);
+}
+
+/* Fancybox thumbnail özelleştirmesi */
+.fancybox__thumbs {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+.fancybox__thumb {
+    border-radius: 4px;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+
+.fancybox__thumb:hover,
+.fancybox__thumb[aria-selected="true"] {
+    opacity: 1;
+    border-color: var(--fancybox-accent-color);
+}
+
+/* Fancybox caption özelleştirmesi */
+.fancybox__caption {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 1rem;
+    font-size: 0.875rem;
 } 

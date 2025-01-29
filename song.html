@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
+
 <body class="bg-black text-white">
     <!-- Ana Container -->
     <div class="max-w-screen-2xl mx-auto relative">
@@ -17,9 +26,8 @@
             <div class="relative">
                 <!-- Arkaplan -->
                 <div class="h-[480px] relative">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273ba09c4cf44f1656d12adf069" 
-                         class="w-full h-full object-cover filter blur-md brightness-50"
-                         alt="Karma">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273ba09c4cf44f1656d12adf069"
+                        class="w-full h-full object-cover filter blur-md brightness-50" alt="Karma">
                     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
                 </div>
 
@@ -28,11 +36,12 @@
                     <div class="max-w-[1400px] mx-auto flex items-end gap-8">
                         <!-- Albüm Kapağı -->
                         <div class="relative w-64 h-64 shrink-0 hover-3d">
-                            <img src="https://i.scdn.co/image/ab67616d0000b273ba09c4cf44f1656d12adf069" 
-                                 class="w-full h-full object-cover rounded-lg shadow-2xl"
-                                 alt="Karma">
-                            <div class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
-                                <button class="bg-blue-500 rounded-full p-4 transform scale-0 hover:scale-110 group-hover:scale-100 transition-all">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273ba09c4cf44f1656d12adf069"
+                                class="w-full h-full object-cover rounded-lg shadow-2xl" alt="Karma">
+                            <div
+                                class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
+                                <button
+                                    class="bg-blue-500 rounded-full p-4 transform scale-0 hover:scale-110 group-hover:scale-100 transition-all">
                                     <i class="fas fa-play text-2xl text-black"></i>
                                 </button>
                             </div>
@@ -43,10 +52,10 @@
                             <span class="text-sm font-bold mb-2 block">TEKLİ</span>
                             <h1 class="text-6xl font-bold mb-6">Karma</h1>
                             <div class="flex items-center space-x-4 text-sm">
-                                <a href="artist.html" class="flex items-center space-x-2 hover:text-blue-500 transition">
-                                    <img src="https://i.scdn.co/image/ab6761610000e5eb317910433fe174b8bb36ab46" 
-                                         class="w-8 h-8 rounded-full"
-                                         alt="Şehinşah">
+                                <a href="artist.html"
+                                    class="flex items-center space-x-2 hover:text-blue-500 transition">
+                                    <img src="https://i.scdn.co/image/ab6761610000e5eb317910433fe174b8bb36ab46"
+                                        class="w-8 h-8 rounded-full" alt="Şehinşah">
                                     <span class="font-bold">Şehinşah</span>
                                 </a>
                                 <span class="text-gray-400">•</span>
@@ -91,15 +100,18 @@
                             <div class="flex items-center justify-between mb-6">
                                 <h2 class="text-2xl font-bold">Şarkı Sözleri</h2>
                                 <div class="flex items-center space-x-4">
-                                    <button class="text-sm text-gray-400 hover:text-white transition flex items-center space-x-2">
+                                    <button
+                                        class="text-sm text-gray-400 hover:text-white transition flex items-center space-x-2">
                                         <i class="fas fa-text-height"></i>
                                         <span>Yazı Boyutu</span>
                                     </button>
-                                    <button class="text-sm text-gray-400 hover:text-white transition flex items-center space-x-2">
+                                    <button
+                                        class="text-sm text-gray-400 hover:text-white transition flex items-center space-x-2">
                                         <i class="fas fa-language"></i>
                                         <span>Çeviri</span>
                                     </button>
-                                    <button class="text-sm text-gray-400 hover:text-white transition flex items-center space-x-2">
+                                    <button
+                                        class="text-sm text-gray-400 hover:text-white transition flex items-center space-x-2">
                                         <i class="fas fa-share"></i>
                                         <span>Paylaş</span>
                                     </button>
@@ -118,7 +130,9 @@
                                             <span>5:12</span>
                                         </div>
                                         <!-- Aktif zaman göstergesi -->
-                                        <div class="absolute left-0 top-[20%] w-full h-8 bg-blue-500/10 border-r-2 border-blue-500 transition-all duration-300"></div>
+                                        <div
+                                            class="absolute left-0 top-[20%] w-full h-8 bg-blue-500/10 border-r-2 border-blue-500 transition-all duration-300">
+                                        </div>
                                     </div>
                                 </div>
 
@@ -127,7 +141,8 @@
                                     <!-- Verse 1 -->
                                     <div class="lyrics-verse">
                                         <span class="text-sm text-blue-500 block mb-2">[Verse 1]</span>
-                                        <p class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
+                                        <p
+                                            class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
                                             Yine bir gece vakti düşünceler<br>
                                             Aklımda dönüp duran cümleler<br>
                                             Her şeyin bir sebebi var derler ya<br>
@@ -138,7 +153,8 @@
                                     <!-- Nakarat -->
                                     <div class="lyrics-verse">
                                         <span class="text-sm text-blue-500 block mb-2">[Nakarat]</span>
-                                        <p class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
+                                        <p
+                                            class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
                                             Bu hayat bir karma<br>
                                             Her şey döner durur bir yandan<br>
                                             Bazen yukarı bazen aşağı<br>
@@ -149,7 +165,8 @@
                                     <!-- Verse 2 -->
                                     <div class="lyrics-verse">
                                         <span class="text-sm text-blue-500 block mb-2">[Verse 2]</span>
-                                        <p class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
+                                        <p
+                                            class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
                                             Zaman akıp gider durduramam ki<br>
                                             Her anı yaşarım kaçıramam ki<br>
                                             Hayatın dengesi bu olsa gerek<br>
@@ -160,7 +177,8 @@
                                     <!-- Bridge -->
                                     <div class="lyrics-verse">
                                         <span class="text-sm text-blue-500 block mb-2">[Bridge]</span>
-                                        <p class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
+                                        <p
+                                            class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
                                             Her gün yeni bir sayfa açılır<br>
                                             Bazı yaralar zamanla kapanır<br>
                                             Düşe kalka öğrendim hayatı<br>
@@ -171,7 +189,8 @@
                                     <!-- Nakarat 2 -->
                                     <div class="lyrics-verse">
                                         <span class="text-sm text-blue-500 block mb-2">[Nakarat 2]</span>
-                                        <p class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
+                                        <p
+                                            class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
                                             Bu hayat bir karma (karma)<br>
                                             Her şey döner durur bir yandan (hey)<br>
                                             Bazen yukarı bazen aşağı<br>
@@ -182,7 +201,8 @@
                                     <!-- Outro -->
                                     <div class="lyrics-verse">
                                         <span class="text-sm text-blue-500 block mb-2">[Outro]</span>
-                                        <p class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
+                                        <p
+                                            class="text-gray-300 leading-relaxed hover:text-white transition-colors cursor-pointer">
                                             Karma, karma, karma...<br>
                                             Her şey döner durur<br>
                                             Hayat devam eder<br>
@@ -205,7 +225,8 @@
                                 </div>
 
                                 <!-- Altyazı Modu Butonu -->
-                                <button class="absolute bottom-6 right-6 bg-blue-500 text-white px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition flex items-center space-x-2">
+                                <button
+                                    class="absolute bottom-6 right-6 bg-blue-500 text-white px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition flex items-center space-x-2">
                                     <i class="fas fa-closed-captioning"></i>
                                     <span>Altyazı Modu</span>
                                 </button>
@@ -235,7 +256,7 @@
                             <div class="bg-[#181818] rounded-lg p-4 space-y-3">
                                 <div class="flex items-center justify-between">
                                     <span class="text-gray-400">Toplam Dinlenme</span>
-                                    <span class="font-bold">2.1M</span>
+                                    <span class="font-bold">43.6M</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-gray-400">Aylık Dinlenme</span>
@@ -262,7 +283,7 @@
                                 </div>
                                 <div>
                                     <span class="text-gray-400 block">Yayın Tarihi</span>
-                                    <span class="font-bold">15 Kasım 2023</span>
+                                    <span class="font-bold">15 Kasım 2017</span>
                                 </div>
                             </div>
                         </section>
@@ -273,13 +294,20 @@
                             <div class="bg-[#181818] rounded-lg p-4">
                                 <div class="h-32 flex items-end space-x-1">
                                     <!-- Her bir çubuk için -->
-                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t" style="height: 60%"></div>
-                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t" style="height: 80%"></div>
-                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t" style="height: 40%"></div>
-                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t" style="height: 90%"></div>
-                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t" style="height: 70%"></div>
-                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t" style="height: 100%"></div>
-                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t" style="height: 85%"></div>
+                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t"
+                                        style="height: 60%"></div>
+                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t"
+                                        style="height: 80%"></div>
+                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t"
+                                        style="height: 40%"></div>
+                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t"
+                                        style="height: 90%"></div>
+                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t"
+                                        style="height: 70%"></div>
+                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t"
+                                        style="height: 100%"></div>
+                                    <div class="w-full bg-gray-700 hover:bg-blue-500 transition-all rounded-t"
+                                        style="height: 85%"></div>
                                 </div>
                                 <div class="flex justify-between mt-2 text-xs text-gray-400">
                                     <span>Pzt</span>
@@ -298,14 +326,15 @@
                             <h3 class="text-xl font-bold mb-4">Şarkı Hikayesi</h3>
                             <div class="bg-[#181818] rounded-lg p-6 space-y-4">
                                 <div class="flex items-start space-x-4">
-                                    <img src="https://i.scdn.co/image/ab6761610000e5eb317910433fe174b8bb36ab46" 
-                                         class="w-12 h-12 rounded-full"
-                                         alt="Şehinşah">
+                                    <img src="https://i.scdn.co/image/ab6761610000e5eb317910433fe174b8bb36ab46"
+                                        class="w-12 h-12 rounded-full" alt="Şehinşah">
                                     <div>
                                         <span class="font-bold block mb-2">Şehinşah'tan</span>
                                         <p class="text-gray-300 text-sm leading-relaxed">
-                                            "Karma, hayatın döngüsel yapısını ve her şeyin bir dengeye sahip olduğunu anlatan bir parça. 
-                                            Bu şarkıyı yazdığım dönemde hayatın inişli çıkışlı yapısını derinden hissediyordum..."
+                                            "Karma, hayatın döngüsel yapısını ve her şeyin bir dengeye sahip olduğunu
+                                            anlatan bir parça.
+                                            Bu şarkıyı yazdığım dönemde hayatın inişli çıkışlı yapısını derinden
+                                            hissediyordum..."
                                         </p>
                                     </div>
                                 </div>
@@ -326,7 +355,8 @@
                         <section class="mb-8">
                             <h3 class="text-xl font-bold mb-4">Versiyonlar</h3>
                             <div class="space-y-3">
-                                <div class="bg-[#181818] rounded-lg p-4 hover:bg-[#282828] transition group cursor-pointer">
+                                <div
+                                    class="bg-[#181818] rounded-lg p-4 hover:bg-[#282828] transition group cursor-pointer">
                                     <div class="flex items-center justify-between">
                                         <div class="flex items-center space-x-4">
                                             <div class="w-12 h-12 bg-gray-700 rounded flex items-center justify-center">
@@ -343,7 +373,8 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-[#181818] rounded-lg p-4 hover:bg-[#282828] transition group cursor-pointer">
+                                <div
+                                    class="bg-[#181818] rounded-lg p-4 hover:bg-[#282828] transition group cursor-pointer">
                                     <div class="flex items-center justify-between">
                                         <div class="flex items-center space-x-4">
                                             <div class="w-12 h-12 bg-gray-700 rounded flex items-center justify-center">
@@ -361,6 +392,63 @@
                                 </div>
                             </div>
                         </section>
+
+                        <!-- Etiketler ve Türler bölümünü ekleyelim -->
+                        <section class="mb-8">
+                            <h3 class="text-xl font-bold mb-4">Etiketler & Türler</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-[#282828] rounded-full text-sm hover:bg-[#383838] transition cursor-pointer">
+                                    Hip Hop
+                                </span>
+                                <span
+                                    class="px-3 py-1 bg-[#282828] rounded-full text-sm hover:bg-[#383838] transition cursor-pointer">
+                                    Rap
+                                </span>
+                                <span
+                                    class="px-3 py-1 bg-[#282828] rounded-full text-sm hover:bg-[#383838] transition cursor-pointer">
+                                    Türkçe Rap
+                                </span>
+                                <span
+                                    class="px-3 py-1 bg-[#282828] rounded-full text-sm hover:bg-[#383838] transition cursor-pointer">
+                                    2017
+                                </span>
+                                <span
+                                    class="px-3 py-1 bg-[#282828] rounded-full text-sm hover:bg-[#383838] transition cursor-pointer">
+                                    #motivasyon
+                                </span>
+                            </div>
+                        </section>
+
+                        <!-- Kullanıcı Notları bölümünü ekleyelim -->
+                        <section class="mb-8">
+                            <h3 class="text-xl font-bold mb-4">Kullanıcı Notları</h3>
+                            <div class="bg-[#181818] rounded-lg p-4 space-y-4">
+                                <!-- Not Ekleme -->
+                                <div class="flex items-center space-x-2">
+                                    <input type="text" placeholder="Şarkı hakkında not ekle..."
+                                        class="flex-1 bg-[#282828] rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600 transition">
+                                        Ekle
+                                    </button>
+                                </div>
+
+                                <!-- Notlar -->
+                                <div class="space-y-3">
+                                    <div class="flex items-start justify-between p-3 bg-[#282828] rounded-lg">
+                                        <div>
+                                            <p class="text-sm text-gray-300">2:15 - Bridge bölümü başlıyor</p>
+                                            <span class="text-xs text-gray-500">3 gün önce</span>
+                                        </div>
+                                        <button class="text-gray-400 hover:text-white">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Diğer notlar -->
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
 
@@ -370,15 +458,16 @@
                         <h2 class="text-2xl font-bold">Benzer Şarkılar</h2>
                         <button class="text-blue-500 hover:text-blue-400 text-sm font-bold">TÜMÜNÜ GÖR</button>
                     </div>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Benzer Şarkı Kartı -->
                         <div class="bg-[#181818] rounded-lg p-4 hover:bg-[#282828] transition group cursor-pointer">
                             <div class="flex items-start space-x-4">
                                 <div class="relative shrink-0">
-                                    <img src="https://i.scdn.co/image/ab67616d00001e02ba09c4cf44f1656d12adf069" 
-                                         class="w-16 h-16 rounded-lg" alt="Similar Song">
-                                    <button class="absolute bottom-1 right-1 bg-blue-500 rounded-full p-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e02ba09c4cf44f1656d12adf069"
+                                        class="w-16 h-16 rounded-lg" alt="Similar Song">
+                                    <button
+                                        class="absolute bottom-1 right-1 bg-blue-500 rounded-full p-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all">
                                         <i class="fas fa-play text-black text-xs"></i>
                                     </button>
                                 </div>
@@ -397,7 +486,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="text-gray-400 hover:text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button
+                                    class="text-gray-400 hover:text-white opacity-0 group-hover:opacity-100 transition-opacity">
                                     <i class="fas fa-ellipsis-v"></i>
                                 </button>
                             </div>
@@ -421,7 +511,7 @@
                         <!-- Yorum Kartı -->
                         <div class="bg-[#181818] rounded-lg p-4 hover:bg-[#282828] transition">
                             <div class="flex items-start space-x-4">
-                                <img src="path/to/user-avatar.jpg" class="w-10 h-10 rounded-full" alt="User">
+                                <img src="https://i.scdn.co/image/ab6761610000e5eb317910433fe174b8bb36ab46" class="w-10 h-10 rounded-full" alt="User">
                                 <div class="flex-1">
                                     <div class="flex items-center justify-between mb-2">
                                         <div>
@@ -448,10 +538,132 @@
                         <!-- Diğer yorumlar -->
                     </div>
                 </section>
+
+                <!-- Görsel Galeri bölümünü güncelleyelim -->
+                <section class="mb-12">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-bold">Galeri</h2>
+                        <button class="text-blue-500 hover:text-blue-400 text-sm font-bold">TÜMÜNÜ GÖR</button>
+                    </div>
+                    
+                    <div class="swiper gallerySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Konser Fotoğrafı 1 -->
+                            <div class="swiper-slide">
+                                <a href="https://www.rapertuar.com/wp-content/uploads/2022/09/s%CC%A7ehins%CC%A7ah.jpg" 
+                                   data-fancybox="gallery" 
+                                   data-caption="Festival Performansı - 2023"
+                                   class="relative block group cursor-pointer">
+                                    <div class="aspect-video rounded-lg overflow-hidden">
+                                        <img src="https://www.rapertuar.com/wp-content/uploads/2022/09/s%CC%A7ehins%CC%A7ah.jpg" 
+                                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                                             alt="Şehinşah Konser">
+                                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity">
+                                            <div class="absolute bottom-4 left-4">
+                                                <p class="text-sm font-medium">Festival Performansı</p>
+                                                <span class="text-xs text-gray-300">2023</span>
+                                            </div>
+                                            <div class="absolute top-4 right-4">
+                                                <i class="fas fa-expand text-white text-xl"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Konser Fotoğrafı 2 -->
+                            <div class="swiper-slide">
+                                <div class="relative group cursor-pointer" 
+                                     onclick="Fancybox.show([
+                                         {
+                                             src: 'https://etkinlika.com/files/events/cover/Sehinsah-8810.jpeg',
+                                             caption: 'Harbiye Açık Hava Konseri - 2023'
+                                         }
+                                     ]);">
+                                    <div class="aspect-video rounded-lg overflow-hidden">
+                                        <img src="https://etkinlika.com/files/events/cover/Sehinsah-8810.jpeg" 
+                                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                                             alt="Şehinşah Konser">
+                                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity">
+                                            <div class="absolute bottom-4 left-4">
+                                                <p class="text-sm font-medium">Harbiye Açık Hava Konseri</p>
+                                                <span class="text-xs text-gray-300">2023</span>
+                                            </div>
+                                            <div class="absolute top-4 right-4">
+                                                <i class="fas fa-expand text-white text-xl"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Konser Fotoğrafı 3 -->
+                            <div class="swiper-slide">
+                                <div class="relative group cursor-pointer" 
+                                     onclick="Fancybox.show([
+                                         {
+                                             src: 'https://www.rapertuar.com/wp-content/uploads/2021/12/s%CC%A7ehins%CC%A7ah-1080x680.jpg',
+                                             caption: 'İstanbul Konseri - 2022'
+                                         }
+                                     ]);">
+                                    <div class="aspect-video rounded-lg overflow-hidden">
+                                        <img src="https://www.rapertuar.com/wp-content/uploads/2021/12/s%CC%A7ehins%CC%A7ah-1080x680.jpg" 
+                                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                                             alt="Şehinşah Konser">
+                                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity">
+                                            <div class="absolute bottom-4 left-4">
+                                                <p class="text-sm font-medium">İstanbul Konseri</p>
+                                                <span class="text-xs text-gray-300">2022</span>
+                                            </div>
+                                            <div class="absolute top-4 right-4">
+                                                <i class="fas fa-expand text-white text-xl"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </section>
+
+                <!-- Özel Öneriler bölümünü ekleyelim -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6">Bu Şarkıyı Dinleyenler İçin</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Playlist Önerisi -->
+                        <div
+                            class="bg-gradient-to-br from-purple-600 to-blue-600 p-6 rounded-lg hover:scale-[1.02] transition cursor-pointer group">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="text-xs bg-black/30 px-2 py-1 rounded-full">PLAYLİST</span>
+                                    <h3 class="text-xl font-bold mt-3">Türkçe Rap En İyiler</h3>
+                                    <p class="text-sm text-gray-200 mt-1">En iyi Türkçe rap şarkıları</p>
+                                </div>
+                                <button
+                                    class="opacity-0 group-hover:opacity-100 transition-all bg-blue-500 rounded-full p-3 hover:scale-105">
+                                    <i class="fas fa-play text-black"></i>
+                                </button>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-xs bg-black/30 px-2 py-1 rounded-full">250+ şarkı</span>
+                            </div>
+                        </div>
+
+                        <!-- Radyo İstasyonu Önerisi -->
+                        <div
+                            class="bg-gradient-to-br from-green-600 to-teal-600 p-6 rounded-lg hover:scale-[1.02] transition cursor-pointer group">
+                            <!-- ... içerik ... -->
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
     </div>
 
     <script src="script.js"></script>
 </body>
-</html> 
+
+</html>
