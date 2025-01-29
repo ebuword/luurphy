@@ -133,4 +133,4 @@ Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS,
 Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ## İletişim
-Proje bağlantısı: [https://github.com/yourusername/luurphy](https://github.com/yourusername/luurphy)
+Proje bağlantısı: [https://github.com/ebuword/luurphy](https://github.com/ebuword/luurphy)
