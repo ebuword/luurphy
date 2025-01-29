@@ -11,37 +11,37 @@ Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS,
 - Çalma listeleri yönetimi 
 - Önerilen içerikler ve karışımlar
 - Yakında çalınanlar bölümü
-- Detaylı sanatçı kartları
-  - Aylık ve toplam dinlenme istatistikleri
-  - Popüler şehirler
-  - Son çıkan eserler
-- Canlı etkinlikler bölümü
-- Keşfet bölümü
 - Tam işlevsel müzik çalar
 - Arkadaş aktiviteleri paneli
-  - Anlık dinleme durumu
-  - Ortak dinleme seansları
-  - Arkadaş filtreleme
-  - Aktivite geçmişi
 
-### Logo ve Marka Kimliği
-- Animasyonlu logo tasarımı
-  - Gradient renk geçişleri
-  - Parıltı efekti
+### Sanatçı Profili (artist.html)
+- Etkileyici hero bölümü
+  - Animasyonlu parçacık efekti
+  - Paralaks kaydırma efekti
+  - Gradient overlay
+- Detaylı sanatçı istatistikleri
+  - Aylık dinleyici trendi
+  - Popüler şehirler analizi
+  - Dinleyici yaş dağılımı
+  - Günlük dinlenme saatleri grafiği
+- İnteraktif şarkı listesi
   - Hover animasyonları
-  - Müzik notu animasyonu
-  - Alt çizgi efektleri
-  - Text shadow efektleri
-  - Letter spacing animasyonu
-
-### Arama Sayfası (search.html)
-- Gelişmiş arama çubuğu
-- En çok arananlar
-- Trend içerikler
-- Kategori kartları
-- Son aramalar geçmişi
-- Dinamik hover efektleri
-- Önerilen kategoriler
+  - Müzik dalgası efekti
+  - Anlık istatistikler
+- Özel koleksiyonlar
+  - Aylık en iyiler
+  - Akustik versiyonlar
+  - Remix koleksiyonu
+- Albüm galerisi
+  - 3D hover efekti
+  - Parıltı animasyonu
+  - Detaylı albüm bilgileri
+- Sanatçı hakkında
+  - Biyografi
+  - Sosyal medya bağlantıları
+  - İstatistikler
+- Benzer sanatçılar
+- Yaklaşan konserler
 
 ### Tasarım Özellikleri
 - Gradient arka planlar ve efektler
@@ -55,35 +55,19 @@ Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS,
 - 3D kart dönüşümleri
 - Parıltı animasyonları
 
-### Etkileşimler
-- Çalma/duraklatma kontrolü
-- Beğeni sistemi
-- Ses kontrolü
-- İlerleme çubuğu
-- Menü seçimi
-- Playlist yönetimi
-- Tooltip sistemi
-- Ortak dinleme seansları
-- Arkadaş takibi
-
 ### Animasyonlar
 - Müzik dalgası efekti
-- Equalizer animasyonu
-- Gradient text animasyonları
+- Parçacık animasyonu
+- Gradient geçişler
 - Kart hover animasyonları
 - Slide-in efektleri
 - Pulse animasyonları
 - Parıltı efektleri
-- Dönen CD animasyonu
-- Logo animasyonları
-  - Shine efekti
-  - Float animasyonu
-  - Gradient geçişler
-  - Hover transformları
+- 3D dönüşüm efektleri
+- Fade-in animasyonları
 
 ### Responsive Özellikler
 - Mobil uyumlu tasarım
-- Özel mobil menü
 - Adaptif grid sistemi
 - Mobil-dostu butonlar
 - Touch destekli etkileşimler
@@ -95,14 +79,9 @@ Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS,
 - Hover animasyonları
 - Kart hover efektleri
 - Animasyonlu arka planlar
-- Tooltip stilleri
 - Glassmorphism efektleri
 - Custom transitions
-- Logo animasyonları
-  - Keyframe animasyonları
-  - Transform efektleri
-  - Pseudo-element kullanımı
-  - Cubic-bezier zamanlama fonksiyonları
+- Keyframe animasyonları
 
 ## Kullanılan Teknolojiler
 - HTML5
@@ -119,15 +98,17 @@ Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS,
 ## Ekran Görüntüleri
 
 ### Ana Sayfa
-![alt text](image.png)
+![Ana Sayfa](screenshots/home.png)
 - Sol menü ve çalma listeleri
 - Önerilen içerikler
 - Müzik çalar
 
-### Arama Sayfası
-- Arama çubuğu
-- Kategoriler
-- Trend içerikler
+### Sanatçı Profili
+![Sanatçı Profili](screenshots/artist.png)
+- Hero bölümü
+- İstatistikler
+- Şarkı listesi
+- Albümler
 
 ## Planlanan Geliştirmeler
 - Şarkı sözleri görünümü
@@ -141,4 +122,15 @@ Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS,
 - Mini oynatıcı modu
 - Kişiselleştirilmiş öneriler
 
-Luurphy'nin gelişimi sürecek.
+## Katkıda Bulunma
+1. Bu depoyu fork edin
+2. Yeni bir branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Yeni özellik: Muhteşem özellik'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Bir Pull Request oluşturun
+
+## Lisans
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+
+## İletişim
+Proje bağlantısı: [https://github.com/yourusername/luurphy](https://github.com/yourusername/luurphy)

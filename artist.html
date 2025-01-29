@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehinşah - Luurphy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Ana Container -->
+    <div class="max-w-screen-2xl mx-auto relative">
+        <!-- Ana İçerik -->
+        <main class="w-full min-h-screen pb-24">
+            <!-- Sanatçı Profili Header -->
+            <div class="relative w-full">
+                <!-- Arkaplan Görseli -->
+                <div class="h-[580px] relative w-full group">
+                    <img src="https://i.scdn.co/image/ab67618600001016e31778d48c569e517175cb0e" 
+                         class="w-full h-full object-cover filter brightness-75 group-hover:scale-105 transition-transform duration-700"
+                         alt="Şehinşah">
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
+                    <!-- Animasyonlu Parçacıklar -->
+                    <div class="absolute inset-0 opacity-50">
+                        <div class="floating-particles"></div>
+                    </div>
+                </div>
+
+                <!-- Sanatçı Bilgileri -->
+                <div class="absolute bottom-0 left-0 right-0 p-12">
+                    <div class="max-w-[1800px] mx-auto">
+                        <!-- Doğrulanmış Rozet -->
+                        <div class="flex items-center space-x-2 mb-6 animate-fade-in">
+                            <span class="bg-blue-500/20 backdrop-blur-sm text-xs px-4 py-2 rounded-full flex items-center border border-blue-500/50 hover:bg-blue-500/30 transition">
+                                <i class="fas fa-check-circle mr-2"></i>
+                                Doğrulanmış Sanatçı
+                            </span>
+                        </div>
+                        
+                        <h1 class="text-7xl font-bold mb-8 animate-slide-up ">Şehinşah</h1>
+                        
+                        <!-- İstatistikler -->
+                        <div class="flex flex-wrap items-center gap-8 text-sm animate-fade-in-up">
+                            <div class="flex items-center space-x-3 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full hover:bg-black/40 transition">
+                                <i class="fas fa-headphones-alt text-blue-500 text-lg"></i>
+                                <div>
+                                    <span class="block font-bold text-lg">1.4M</span>
+                                    <span class="text-gray-300">aylık dinleyici</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full hover:bg-black/40 transition">
+                                <i class="fas fa-users text-blue-500 text-lg"></i>
+                                <div>
+                                    <span class="block font-bold text-lg">852K</span>
+                                    <span class="text-gray-300">takipçi</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full hover:bg-black/40 transition">
+                                <i class="fas fa-music text-blue-500 text-lg"></i>
+                                <div>
+                                    <span class="block font-bold text-lg">124</span>
+                                    <span class="text-gray-300">şarkı</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eylem Butonları -->
+            <div class="relative bg-black/95 backdrop-blur-md">
+                <div class="p-6">
+                    <div class="flex items-center space-x-6">
+                        <button class="bg-gradient-to-r from-blue-500 to-blue-600 text-black rounded-full p-4 hover:scale-105 transition group shadow-lg shadow-blue-500/20">
+                            <i class="fas fa-play text-xl group-hover:scale-110 transition"></i>
+                        </button>
+                        <button class="relative overflow-hidden border-2 border-gray-400 hover:border-white text-gray-400 hover:text-white px-8 py-3 rounded-full transition flex items-center space-x-2 group">
+                            <span class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                            <i class="fas fa-user-plus relative z-10"></i>
+                            <span class="relative z-10">Takip Et</span>
+                        </button>
+                        <div class="relative group">
+                            <button class="text-gray-400 hover:text-white p-3 bg-black/30 rounded-full backdrop-blur-sm hover:bg-black/40 transition">
+                                <i class="fas fa-ellipsis-h text-xl"></i>
+                            </button>
+                            <!-- Geliştirilmiş Dropdown Menü -->
+                            <div class="absolute left-0 mt-2 w-56 bg-[#282828]/95 backdrop-blur-md rounded-xl shadow-xl hidden group-hover:block animate-fade-in">
+                                <div class="py-2">
+                                    <a href="#" class="flex items-center px-4 py-3 text-sm hover:bg-white/5 transition">
+                                        <i class="fas fa-share-alt mr-3 text-blue-500"></i>
+                                        <div>
+                                            <span class="block font-bold">Profili Paylaş</span>
+                                            <span class="text-xs text-gray-400">Arkadaşlarınla paylaş</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex items-center px-4 py-3 text-sm hover:bg-white/5 transition">
+                                        <i class="fas fa-copy mr-3 text-purple-500"></i>
+                                        <div>
+                                            <span class="block font-bold">Bağlantıyı Kopyala</span>
+                                            <span class="text-xs text-gray-400">Profil URL'sini kopyala</span>
+                                        </div>
+                                    </a>
+                                    <div class="border-t border-white/10 my-1"></div>
+                                    <a href="#" class="flex items-center px-4 py-3 text-sm hover:bg-white/5 transition text-red-500">
+                                        <i class="fas fa-ban mr-3"></i>
+                                        <span class="font-bold">Engelle</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ana İçerik Bölümleri -->
+            <div class="p-8 max-w-[1400px] mx-auto">
+                <!-- Dinleyici İstatistikleri -->
+                <section class="mb-12">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <!-- Aylık Dinleyici Trendi -->
+                        <div class="bg-[#181818] p-6 rounded-lg">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-bold">Aylık Trend</h3>
+                                <span class="text-green-500 flex items-center">
+                                    <i class="fas fa-arrow-up mr-1"></i>
+                                    12%
+                                </span>
+                            </div>
+                            <div class="h-24 flex items-end space-x-1">
+                                <!-- Grafik çubukları -->
+                                <div class="w-1/12 h-[40%] bg-gray-600 hover:bg-blue-500 transition-all rounded-t"></div>
+                                <div class="w-1/12 h-[60%] bg-gray-600 hover:bg-blue-500 transition-all rounded-t"></div>
+                                <div class="w-1/12 h-[45%] bg-gray-600 hover:bg-blue-500 transition-all rounded-t"></div>
+                                <div class="w-1/12 h-[80%] bg-gray-600 hover:bg-blue-500 transition-all rounded-t"></div>
+                                <div class="w-1/12 h-[70%] bg-gray-600 hover:bg-blue-500 transition-all rounded-t"></div>
+                                <div class="w-1/12 h-[90%] bg-gray-600 hover:bg-blue-500 transition-all rounded-t"></div>
+                                <div class="w-1/12 h-full bg-blue-500 rounded-t"></div>
+                            </div>
+                        </div>
+
+                        <!-- En Çok Dinlendiği Şehirler -->
+                        <div class="bg-[#181818] p-6 rounded-lg">
+                            <h3 class="font-bold mb-4">Popüler Şehirler</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm">İstanbul</span>
+                                    <div class="w-2/3 h-2 bg-gray-700 rounded-full overflow-hidden">
+                                        <div class="w-[85%] h-full bg-blue-500"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm">Ankara</span>
+                                    <div class="w-2/3 h-2 bg-gray-700 rounded-full overflow-hidden">
+                                        <div class="w-[65%] h-full bg-blue-500"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm">İzmir</span>
+                                    <div class="w-2/3 h-2 bg-gray-700 rounded-full overflow-hidden">
+                                        <div class="w-[45%] h-full bg-blue-500"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Yaş Grubu Dağılımı -->
+                        <div class="bg-[#181818] p-6 rounded-lg">
+                            <h3 class="font-bold mb-4">Dinleyici Yaş Grubu</h3>
+                            <div class="flex items-center space-x-4">
+                                <div class="flex-1">
+                                    <div class="text-xs text-gray-400 mb-1">18-24</div>
+                                    <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                        <div class="w-[75%] h-full bg-blue-500"></div>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-xs text-gray-400 mb-1">25-34</div>
+                                    <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                        <div class="w-[60%] h-full bg-blue-500"></div>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-xs text-gray-400 mb-1">35+</div>
+                                    <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                        <div class="w-[25%] h-full bg-blue-500"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dinlenme Zamanları -->
+                        <div class="bg-[#181818] p-6 rounded-lg">
+                            <h3 class="font-bold mb-4">En Çok Dinlenme Saatleri</h3>
+                            <div class="grid grid-cols-6 gap-1 h-24">
+                                <!-- Saat bazlı dinlenme grafiği -->
+                                <div class="bg-gray-700 hover:bg-blue-500 transition-all rounded h-[30%]"></div>
+                                <div class="bg-gray-700 hover:bg-blue-500 transition-all rounded h-[45%]"></div>
+                                <div class="bg-gray-700 hover:bg-blue-500 transition-all rounded h-[80%]"></div>
+                                <div class="bg-blue-500 rounded h-full"></div>
+                                <div class="bg-gray-700 hover:bg-blue-500 transition-all rounded h-[60%]"></div>
+                                <div class="bg-gray-700 hover:bg-blue-500 transition-all rounded h-[40%]"></div>
+                            </div>
+                            <div class="flex justify-between mt-2 text-xs text-gray-400">
+                                <span>06:00</span>
+                                <span>12:00</span>
+                                <span>18:00</span>
+                                <span>00:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Popüler Şarkılar -->
+                <section class="mb-12 max-w-full overflow-hidden">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-bold">Popüler</h2>
+                        <div class="flex items-center space-x-4">
+                            <button class="text-sm text-gray-400 hover:text-white flex items-center space-x-2">
+                                <i class="fas fa-clock"></i>
+                                <span>Son 30 gün</span>
+                            </button>
+                            <button class="text-sm text-gray-400 hover:text-white flex items-center space-x-2">
+                                <i class="fas fa-list"></i>
+                                <span>Tümünü gör</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <!-- Şarkı Satırı (Geliştirilmiş) -->
+                        <div class="group grid grid-cols-12 items-center gap-4 p-3 rounded-md hover:bg-[#282828] transition cursor-pointer relative">
+                            <!-- Hover efekti için arka plan overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-blue-500/0 group-hover:from-blue-500/5 group-hover:to-transparent transition-all duration-300"></div>
+                            
+                            <!-- İçerik -->
+                            <div class="col-span-1 text-gray-400 font-medium">1</div>
+                            <div class="col-span-1 relative">
+                                <img src="https://i.scdn.co/image/ab67616d00004851ba09c4cf44f1656d12adf069" 
+                                     class="w-12 h-12 rounded shadow-lg" 
+                                     alt="Karma">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity rounded flex items-center justify-center">
+                                    <i class="fas fa-play text-white"></i>
+                                </div>
+                            </div>
+                            <div class="col-span-4">
+                                <h3 class="font-bold group-hover:text-blue-500 transition">Karma</h3>
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-xs px-2 py-1 bg-blue-500/10 text-blue-500 rounded-full">Yeni</span>
+                                    <p class="text-sm text-gray-400">892K dinlenme</p>
+                                </div>
+                            </div>
+                            <div class="col-span-3 text-sm text-gray-400">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-chart-line text-green-500"></i>
+                                    <span>%12 artış</span>
+                                    <div class="music-wave hidden group-hover:flex">
+                                        <span style="--delay: 0.1s"></span>
+                                        <span style="--delay: 0.2s"></span>
+                                        <span style="--delay: 0.3s"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-2 text-sm text-gray-400 flex items-center justify-end space-x-4">
+                                <button class="opacity-0 group-hover:opacity-100 transition-opacity hover:text-white">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <span>3:42</span>
+                                <button class="opacity-0 group-hover:opacity-100 transition-opacity hover:text-white">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Diğer şarkılar için aynı yapıyı tekrarlayın -->
+                    </div>
+                </section>
+
+                <!-- Özel Listeler -->
+                <section class="mb-12 max-w-full overflow-hidden">
+                    <h2 class="text-2xl font-bold mb-6">Özel Listeler</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Bu Ay En İyiler -->
+                        <div class="bg-gradient-to-br from-purple-600 to-blue-500 p-6 rounded-lg group hover:scale-[1.02] transition cursor-pointer">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="text-xs bg-black/30 px-2 py-1 rounded-full">AYLIK</span>
+                                    <h3 class="text-xl font-bold mt-2">Bu Ay En İyiler</h3>
+                                    <p class="text-sm mt-1 text-gray-200">En çok dinlenen 20 şarkı</p>
+                                </div>
+                                <button class="opacity-0 group-hover:opacity-100 transition-all bg-blue-500 rounded-full p-3 hover:scale-105">
+                                    <i class="fas fa-play text-black"></i>
+                                </button>
+                            </div>
+                            <div class="mt-4 flex items-center space-x-2">
+                                <div class="flex -space-x-2">
+                                    <img src="https://i.scdn.co/image/ab67616d00004851ba09c4cf44f1656d12adf069" class="w-8 h-8 rounded-lg border-2 border-purple-600" alt="Song 1">
+                                    <img src="https://i.scdn.co/image/ab67616d00004851ba09c4cf44f1656d12adf069" class="w-8 h-8 rounded-lg border-2 border-purple-600" alt="Song 2">
+                                    <img src="https://i.scdn.co/image/ab67616d00004851ba09c4cf44f1656d12adf069" class="w-8 h-8 rounded-lg border-2 border-purple-600" alt="Song 3">
+                                </div>
+                                <span class="text-xs bg-black/30 px-2 py-1 rounded-full">+17 şarkı</span>
+                            </div>
+                        </div>
+
+                        <!-- Akustik Versiyonlar -->
+                        <div class="bg-gradient-to-br from-green-600 to-emerald-500 p-6 rounded-lg group hover:scale-[1.02] transition cursor-pointer">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="text-xs bg-black/30 px-2 py-1 rounded-full">KOLEKSİYON</span>
+                                    <h3 class="text-xl font-bold mt-2">Akustik Versiyonlar</h3>
+                                    <p class="text-sm mt-1 text-gray-200">Özel performanslar ve kayıtlar</p>
+                                </div>
+                                <button class="opacity-0 group-hover:opacity-100 transition-all bg-blue-500 rounded-full p-3 hover:scale-105">
+                                    <i class="fas fa-play text-black"></i>
+                                </button>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-xs bg-black/30 px-2 py-1 rounded-full">12 kayıt</span>
+                            </div>
+                        </div>
+
+                        <!-- Remixler -->
+                        <div class="bg-gradient-to-br from-orange-500 to-red-500 p-6 rounded-lg group hover:scale-[1.02] transition cursor-pointer">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="text-xs bg-black/30 px-2 py-1 rounded-full">REMIX</span>
+                                    <h3 class="text-xl font-bold mt-2">Remix Koleksiyonu</h3>
+                                    <p class="text-sm mt-1 text-gray-200">En iyi remix versiyonları</p>
+                                </div>
+                                <button class="opacity-0 group-hover:opacity-100 transition-all bg-blue-500 rounded-full p-3 hover:scale-105">
+                                    <i class="fas fa-play text-black"></i>
+                                </button>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-xs bg-black/30 px-2 py-1 rounded-full">8 remix</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Popüler Albümler -->
+                <section class="mb-12 max-w-full overflow-hidden">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-bold">Popüler Albümler</h2>
+                        <button class="text-gray-400 hover:text-white text-sm font-bold">TÜMÜNÜ GÖR</button>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+                        <!-- Albüm Kartı -->
+                        <div class="bg-[#181818] p-4 rounded-lg hover:bg-[#282828] transition group cursor-pointer hover-3d">
+                            <div class="relative mb-4 sparkle-effect">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02ba09c4cf44f1656d12adf069" 
+                                     class="w-full aspect-square object-cover rounded-lg shadow-lg transform group-hover:scale-105 transition-transform duration-500" 
+                                     alt="Album">
+                                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm font-bold">12 Şarkı</p>
+                                            <p class="text-xs text-gray-300">45 dk</p>
+                                        </div>
+                                        <button class="bg-blue-500 rounded-full p-3 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all hover:scale-110">
+                                            <i class="fas fa-play text-black"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="font-bold text-sm group-hover:text-blue-500 transition">DEEV</h3>
+                            <div class="flex items-center justify-between mt-1">
+                                <p class="text-xs text-gray-400">2023 • Albüm</p>
+                                <div class="flex items-center space-x-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="text-gray-400 hover:text-white">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="text-gray-400 hover:text-white">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Diğer albüm kartları -->
+                    </div>
+                </section>
+
+                <!-- Sanatçı Hakkında -->
+                <section class="mb-12 max-w-full overflow-hidden">
+                    <h2 class="text-2xl font-bold mb-6">Hakkında</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Sol Kısım - Biyografi -->
+                        <div class="bg-[#181818] p-6 rounded-lg">
+                            <p class="text-gray-300 mb-4">
+                                Şehinşah, Türk rap müzik sahnesinin önde gelen isimlerinden biridir. 
+                                Kendine özgü flow'u ve güçlü sözleriyle tanınır.
+                            </p>
+                            <div class="flex items-center justify-between text-sm">
+                                <div>
+                                    <div class="text-gray-400">Kayıt tarihi</div>
+                                    <div class="font-bold">2010</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">Toplam dinlenme</div>
+                                    <div class="font-bold">15.2M</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">Şehir</div>
+                                    <div class="font-bold">İstanbul</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sağ Kısım - Sosyal Medya -->
+                        <div class="space-y-4">
+                            <a href="#" class="flex items-center justify-between p-4 bg-[#181818] rounded-lg hover:bg-[#282828] transition">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fab fa-instagram text-2xl"></i>
+                                    <span class="font-bold">@sehinsah</span>
+                                </div>
+                                <span class="text-sm text-gray-400">1.2M Takipçi</span>
+                            </a>
+                            <a href="#" class="flex items-center justify-between p-4 bg-[#181818] rounded-lg hover:bg-[#282828] transition">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fab fa-youtube text-2xl"></i>
+                                    <span class="font-bold">@SEHINSAHIKARUS</span>
+                                </div>
+                                <span class="text-sm text-gray-400">850K Abone</span>
+                            </a>
+                            <a href="#" class="flex items-center justify-between p-4 bg-[#181818] rounded-lg hover:bg-[#282828] transition">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fab fa-twitter text-2xl"></i>
+                                    <span class="font-bold">@sehinsahakahs</span>
+                                </div>
+                                <span class="text-sm text-gray-400">425K Takipçi</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Benzer Sanatçılar -->
+                <section class="mb-12 max-w-full overflow-hidden">
+                    <h2 class="text-2xl font-bold mb-6">Benzer Sanatçılar</h2>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+                        <!-- Sanatçı Kartı -->
+                        <div class="group">
+                            <div class="relative mb-4">
+                                <img src="https://i.scdn.co/image/ab67616100005174c74ec0db26dfaa7b1655f5b9" 
+                                     class="w-full aspect-square object-cover rounded-full" 
+                                     alt="Artist">
+                                <button class="absolute bottom-2 right-2 bg-blue-500 rounded-full p-3 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+                                    <i class="fas fa-play text-black"></i>
+                                </button>
+                            </div>
+                            <h3 class="font-bold text-center">Tepki</h3>
+                            <p class="text-sm text-gray-400 text-center">Sanatçı</p>
+                        </div>
+                        <!-- Diğer sanatçı kartları -->
+                    </div>
+                </section>
+
+                <!-- Etkinlikler ve Konserler -->
+                <section class="mb-12 max-w-full overflow-hidden">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-bold">Yaklaşan Konserler</h2>
+                        <button class="text-blue-500 hover:text-blue-400 text-sm font-bold">TÜM ETKİNLİKLER</button>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Konser Kartı -->
+                        <div class="bg-[#181818] rounded-lg overflow-hidden group hover:bg-[#282828] transition">
+                            <img src="https://i.scdn.co/image/ab67618600001016e31778d48c569e517175cb0e" class="w-full h-48 object-cover" alt="Concert">
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-sm bg-blue-500 px-2 py-1 rounded-full">CANLI</span>
+                                    <span class="text-sm text-gray-400">23 Aralık 2024</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">Harbiye Açık Hava</h3>
+                                <p class="text-sm text-gray-400 mb-4">İstanbul, Türkiye</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-400">Biletler Biletix'ten!</span>
+                                    <button class="bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:scale-105 transition">
+                                        SATIN AL
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Diğer konser kartları -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
