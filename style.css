@@ -1,0 +1,411 @@
+/* Özel scrollbar stilleri */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Hover efektleri için geçiş animasyonları */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* Çalma çubuğu için hover efekti */
+.progress-bar:hover .progress {
+    background-color: #1db954;
+}
+
+/* Aktif menü öğesi için stil */
+.active {
+    color: #1db954;
+}
+
+/* Gradient text efekti */
+.text-gradient-purple-pink {
+    background: linear-gradient(45deg, #ff6b6b, #ff59f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hover animasyonları */
+.hover-scale {
+    transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Özel scrollbar için ek stiller */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Kart hover efektleri */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animasyonlu gradient arka plan */
+.animated-gradient {
+    background: linear-gradient(45deg, #1e3264, #2d46b9);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Kart döndürme animasyonu */
+.rotate-card {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.rotate-card:hover {
+    transform: rotateY(180deg);
+}
+
+/* Dalga efekti */
+.wave-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave-animation::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 40%;
+    transform: translate(-50%, -50%);
+    animation: wave 15s infinite linear;
+}
+
+@keyframes wave {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Yeni hover efektleri */
+.hover-glow:hover {
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.5);
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient border */
+.gradient-border {
+    position: relative;
+    background: #181818;
+    border-radius: 10px;
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6b6b, #ff59f8, #1db954);
+    border-radius: 12px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gradient-border:hover::before {
+    opacity: 1;
+}
+
+/* Mobil optimizasyonları */
+@media (max-width: 1024px) {
+    .main-content {
+        margin-bottom: 140px; /* Mobil menü için alan */
+    }
+    
+    .mobile-player {
+        height: 60px;
+    }
+}
+
+/* Mobil menü animasyonu */
+.mobile-menu-enter {
+    transform: translateY(100%);
+}
+
+.mobile-menu-enter-active {
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+}
+
+.mobile-menu-exit {
+    transform: translateY(0);
+}
+
+.mobile-menu-exit-active {
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+}
+
+/* Mobil kart hover efektleri */
+@media (hover: none) {
+    .hover-scale:hover {
+        transform: none;
+    }
+    
+    .card-hover:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* Responsive tipografi */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    .text-sm {
+        font-size: 0.8125rem;
+    }
+}
+
+/* Safe area için padding */
+@supports (padding: max(0px)) {
+    .mobile-footer {
+        padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    }
+}
+
+/* Aktif dinleme animasyonları */
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* CD dönme animasyonu */
+.spin-animation {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hover efekti */
+.friend-card {
+    transition: all 0.3s ease;
+}
+
+.friend-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(-5px);
+}
+
+/* Yeni animasyonlar */
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Müzik dalgası animasyonu */
+.music-wave {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 13px;
+}
+
+.music-wave span {
+    width: 2px;
+    height: 100%;
+    background-color: #1db954;
+    border-radius: 1px;
+    animation: wave var(--delay) ease infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        height: 30%;
+    }
+    50% {
+        height: 100%;
+    }
+}
+
+/* Gelişmiş hover efektleri */
+.hover-trigger .hover-content {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.hover-trigger:hover .hover-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Gelişmiş gradient efektleri */
+.gradient-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transform: skewX(-25deg);
+    animation: shine 8s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    20% {
+        left: 200%;
+    }
+    100% {
+        left: 200%;
+    }
+}
+
+/* Aktif filtre butonu için stil */
+.active {
+    background-color: #1db954 !important;
+    color: white;
+}
+
+/* Gelişmiş scrollbar */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+/* Tooltip stil */
+.tooltip {
+    position: relative;
+}
+
+.tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.tooltip:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+} 
