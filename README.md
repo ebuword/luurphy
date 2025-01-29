@@ -1,4 +1,4 @@
-# Luurphy - Spotify Benzeri Müzik Uygulaması
+# Luurphy - Hayatı an'da yaşa!
 
 Modern ve kullanıcı dostu bir müzik dinleme uygulaması arayüzü. HTML, CSS, JavaScript ve Tailwind CSS kullanılarak geliştirilmiştir.
 
